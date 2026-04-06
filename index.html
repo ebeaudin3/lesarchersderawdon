@@ -31,13 +31,19 @@
 
         /* Google Maps */
         .map-container { 
-            height: 400px;
             width: 100%; 
-            max-width: 800px;
+            max-width: 900px; /* Largeur de la carte */
+            height: 450px; 
+            margin: 30px auto; /* Centre le bloc horizontalement */
+            border-radius: 12px; 
             overflow: hidden; 
-            margin-top: 30px auto;
-            border-radius: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .map-container iframe {
+            width: 100% !important;
+            height: 100% !important;
+            border: 0;
         }
 
         /* Galerie de photos uniforme */
@@ -116,7 +122,7 @@
         </div>
     </section>
 
-    <section id="localisation">
+    <section id="localisation" style="text-align: center;">
         <h2>Localisation</h2>
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.0053065481884!2d-73.7265924!3d46.0509924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8b31a1501dcfd%3A0x2b06a4e4d5cb4518!2sLes%20Archers%20de%20Rawdon!5e0!3m2!1sen!2sca!4v1775504478171!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
